@@ -29,28 +29,32 @@ fun MainScreen() {
             )
         }
         is Screen.Editor -> {
-            EditorScreen(
-                imageUri = originalImageUri!!,
-                onEnhanceComplete = { enhancedUri ->
-                    enhancedImageUri = enhancedUri
-                    currentScreen = Screen.Result
-                },
-                onBack = {
-                    currentScreen = Screen.Home
-                }
-            )
+            if (originalImageUri != null) {
+                EditorScreen(
+                    imageUri = originalImageUri!!,
+                    onEnhanceComplete = { enhancedUri ->
+                        enhancedImageUri = enhancedUri
+                        currentScreen = Screen.Result
+                    },
+                    onBack = {
+                        currentScreen = Screen.Home
+                    }
+                )
+            }
         }
         is Screen.Result -> {
-            ResultScreen(
-                originalImageUri = originalImageUri!!,
-                enhancedImageUri = enhancedImageUri!!,
-                onTryAgain = {
-                    currentScreen = Screen.Home
-                },
-                onShare = {
-                    // Share functionality
-                }
-            )
+            if (originalImageUri != null && enhancedImageUri != null) {
+                ResultScreen(
+                    originalImageUri = originalImageUri!!,
+                    enhancedImageUri = enhancedImageUri!!,
+                    onTryAgain = {
+                        currentScreen = Screen.Home
+                    },
+                    onShare = {
+                        // Share functionality
+                    }
+                )
+            }
         }
     }
 }

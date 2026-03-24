@@ -17,23 +17,11 @@ private val DarkColorScheme = darkColorScheme(
     tertiary = Green400,
     background = DarkBackground,
     surface = DarkSurface,
-    surfaceVariant = DarkSurfaceVariant,
-    onPrimary = androidx.compose.ui.graphics.Color.White,
-    onSecondary = androidx.compose.ui.graphics.Color.White,
-    onTertiary = androidx.compose.ui.graphics.Color.White,
-    onBackground = androidx.compose.ui.graphics.Color.White,
-    onSurface = androidx.compose.ui.graphics.Color.White,
-)
-
-private val LightColorScheme = lightColorScheme(
-    primary = Indigo500,
-    secondary = Purple500,
-    tertiary = Green400,
+    surfaceVariant = DarkSurfaceVariant
 )
 
 @Composable
 fun AIImageEnhancerTheme(
-    darkTheme: Boolean = true,
     content: @Composable () -> Unit
 ) {
     val colorScheme = DarkColorScheme
@@ -49,7 +37,6 @@ fun AIImageEnhancerTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
         content = content
     )
 }
