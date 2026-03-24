@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AI Image Enhancer</string>
+    <string name="select_image">Select Image</string>
+    <string name="enhance_image">Enhance Image</string>
+    <string name="processing">Processing...</string>
+    <string name="image_enhanced">Image Enhanced!</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="try_again">Enhance Another</string>
+    <string name="before">Before</string>
+    <string name="after">After</string>
+    <string name="enhanced">Enhanced</string>
+</resources>
