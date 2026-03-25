@@ -15,10 +15,15 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
+import androidx.compose.material3.ExperimentalMaterial3Api
 import com.ultraclaw.imageenhancer.ui.theme.Green400
 import com.ultraclaw.imageenhancer.ui.theme.Indigo500
+import com.ultraclaw.imageenhancer.ui.theme.DarkBackground
+import com.ultraclaw.imageenhancer.ui.theme.DarkSurface
+import com.ultraclaw.imageenhancer.ui.theme.DarkSurfaceVariant
 
 @Composable
+@OptIn(ExperimentalMaterial3Api::class)
 fun ResultScreen(
     originalImageUri: Uri,
     enhancedImageUri: Uri,

@@ -16,8 +16,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
 import com.ultraclaw.imageenhancer.ui.theme.Indigo500
+import com.ultraclaw.imageenhancer.ui.theme.DarkBackground
+import com.ultraclaw.imageenhancer.ui.theme.DarkSurface
+import com.ultraclaw.imageenhancer.ui.theme.DarkSurfaceVariant
 
 @Composable
+@OptIn(ExperimentalMaterial3Api::class)
 fun EditorScreen(
     imageUri: Uri,
     onEnhanceComplete: (Uri) -> Unit,
@@ -125,7 +129,7 @@ private fun SimpleChip(text: String, selected: Boolean, onClick: () -> Unit) {
         modifier = Modifier
             .clip(RoundedCornerShape(12.dp))
             .background(if (selected) Indigo500.copy(alpha = 0.2f) else DarkSurfaceVariant)
-            .padding(horizontal = 12, vertical = 8)
+            .padding(horizontal = 12.dp, vertical = 8.dp)
     ) {
         Text(text = text, color = Color.White)
     }

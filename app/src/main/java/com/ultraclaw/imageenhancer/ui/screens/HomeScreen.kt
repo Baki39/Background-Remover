@@ -19,8 +19,11 @@ import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
 import com.ultraclaw.imageenhancer.ui.theme.Indigo500
 import com.ultraclaw.imageenhancer.ui.theme.Purple500
+import com.ultraclaw.imageenhancer.ui.theme.DarkBackground
+import com.ultraclaw.imageenhancer.ui.theme.DarkSurfaceVariant
 
 @Composable
+@OptIn(ExperimentalMaterial3Api::class)
 fun HomeScreen(onImageSelected: (Uri) -> Unit) {
     var selectedImage by remember { mutableStateOf<Uri?>(null) }
     
