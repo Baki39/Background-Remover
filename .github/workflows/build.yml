@@ -45,13 +45,3 @@ jobs:
         with:
           name: app-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
-
-      - name: Create Release
-        if: github.event_name == 'push'
-        uses: softprops/action-gh-release@v1
-        with:
-          files: app/build/outputs/apk/debug/app-debug.apk
-          tag_name: v1.0.0
-          name: AI Image Enhancer v1.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
