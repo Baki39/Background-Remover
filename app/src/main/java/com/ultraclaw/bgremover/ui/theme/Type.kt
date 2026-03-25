@@ -1,4 +1,4 @@
-package com.ultraclaw.imageenhancer.ui.theme
+package com.ultraclaw.bgremover.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

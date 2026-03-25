@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.ultraclaw.imageenhancer'
+    namespace 'com.ultraclaw.bgremover'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.ultraclaw.imageenhancer"
+        applicationId "com.ultraclaw.bgremover"
         minSdk 24
         targetSdk 34
         versionCode 1

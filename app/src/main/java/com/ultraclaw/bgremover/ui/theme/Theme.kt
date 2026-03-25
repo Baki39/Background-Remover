@@ -1,4 +1,4 @@
-package com.ultraclaw.imageenhancer.ui.theme
+package com.ultraclaw.bgremover.ui.theme
 
 import android.app.Activity
 import androidx.compose.foundation.isSystemInDarkTheme

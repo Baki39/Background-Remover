@@ -1,4 +1,4 @@
-package com.ultraclaw.imageenhancer.ui.screens
+package com.ultraclaw.bgremover.ui.screens
 
 import android.net.Uri
 import androidx.compose.foundation.Image
@@ -16,11 +16,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
 import androidx.compose.material3.ExperimentalMaterial3Api
-import com.ultraclaw.imageenhancer.ui.theme.Green400
-import com.ultraclaw.imageenhancer.ui.theme.Indigo500
-import com.ultraclaw.imageenhancer.ui.theme.DarkBackground
-import com.ultraclaw.imageenhancer.ui.theme.DarkSurface
-import com.ultraclaw.imageenhancer.ui.theme.DarkSurfaceVariant
+import com.ultraclaw.bgremover.ui.theme.Green400
+import com.ultraclaw.bgremover.ui.theme.Indigo500
+import com.ultraclaw.bgremover.ui.theme.DarkBackground
+import com.ultraclaw.bgremover.ui.theme.DarkSurface
+import com.ultraclaw.bgremover.ui.theme.DarkSurfaceVariant
 
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)

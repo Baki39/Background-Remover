@@ -1,4 +1,4 @@
-package com.ultraclaw.imageenhancer
+package com.ultraclaw.bgremover
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,8 +7,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.ultraclaw.imageenhancer.ui.screens.MainScreen
-import com.ultraclaw.imageenhancer.ui.theme.AIImageEnhancerTheme
+import com.ultraclaw.bgremover.ui.screens.MainScreen
+import com.ultraclaw.bgremover.ui.theme.AIImageEnhancerTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.ultraclaw.imageenhancer.ui.screens
+package com.ultraclaw.bgremover.ui.screens
 
 import android.net.Uri
 import androidx.compose.runtime.Composable
